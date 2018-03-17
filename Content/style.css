@@ -7,11 +7,10 @@
  */
 
 
-
 @font-face {
-    font-family: 'Tupperware Handwriting Regular';
-    src: url('~/fonts/tupperware_handwriting-webfont.eot');
-    src: url('~/fonts/tupperware_handwriting-webfont.woff2') format('woff2');
+    font-family: Tupperware-Handwriting;
+    src: url("../fonts/tupperware_handwriting-webfont.eot");
+    src: url("../fonts/tupperware_handwriting-webfont.woff2") format('woff2'), url("../fonts/tupperware_handwriting-webfont.ttf") format('truetype');
     font-weight: normal;
     font-style: normal
 }
@@ -25,7 +24,7 @@
 }
 
 .handwritten {
-    font-family: 'Tupperware Handwriting Regular'
+    font-family: Tupperware-Handwriting;
 }
 
 nav ul a,
