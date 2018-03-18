@@ -15,6 +15,20 @@
     font-style: normal
 }
 
+
+
+.Special-Title{
+    height: 50px;
+}
+
+.card-panel{
+    align-items: center;
+}
+
+.page-footer .footer-copyright {
+    min-height: 10px;
+}
+
 .card-stacked{
     color: black;
 }

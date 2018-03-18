@@ -25,20 +25,20 @@
             </div>
         </nav>
     </div>
-<ul id="dropdownTienda" class="dropdown-content">
-    <li><a href="#!">Basicos de Cocina</a></li>
-    <li><a href="#!">Soluciones para beber</a></li>
-    <li><a href="#!">Conservacion de alimentos</a></li>
-    <li><a href="#!">Transportar</a></li>
-    <li><a href="#!">Cocina inteligente</a></li>
-    <li><a href="#!">Para compartir</a></li>
-    <li><a href="#!">Futuro Kids</a></li>
-    <li><a href="#!">Cocina como Chef</a></li>
-    <li><a href="#!">Soluciones para el hogar</a></li>
-</ul>
-<ul id="dropdownExtras" class="dropdown-content">
-    <li><a href="#!">Bolsos</a></li>
-</ul>
+    <ul id="dropdownTienda" class="dropdown-content">
+        <li><a href="#!">Basicos de Cocina</a></li>
+        <li><a href="#!">Soluciones para beber</a></li>
+        <li><a href="#!">Conservacion de alimentos</a></li>
+        <li><a href="#!">Transportar</a></li>
+        <li><a href="#!">Cocina inteligente</a></li>
+        <li><a href="#!">Para compartir</a></li>
+        <li><a href="#!">Futuro Kids</a></li>
+        <li><a href="#!">Cocina como Chef</a></li>
+        <li><a href="#!">Soluciones para el hogar</a></li>
+    </ul>
+    <ul id="dropdownExtras" class="dropdown-content">
+        <li><a href="#!">Bolsos</a></li>
+    </ul>
     @RenderBody()
     <footer class="page-footer teal">
         <div class="container">
@@ -54,8 +54,8 @@
                     <ul>
                         <li><a class="white-text" href="#!">¡Quiero vender!</a></li>
                         @*<li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>*@
+                            <li><a class="white-text" href="#!">Link 3</a></li>
+                            <li><a class="white-text" href="#!">Link 4</a></li>*@
                     </ul>
                 </div>
                 <div class="col l3 s12">
@@ -70,23 +70,22 @@
             </div>
         </div>
         <div class="footer-copyright">
-            <div class="container">
-                @*Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>*@
-            </div>
+            @*<div class="container">*@
+            @*Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>*@
         </div>
     </footer>
     @Scripts.Render("~/bundles/jquery")
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="~/Scripts/materialize.js"></script>
-<script src="~/Scripts/init.js"></script>
-<script>
-    $(document).ready(function() {
-        $(".dropdown-button").dropdown({
-            constrainWidth: false,
-            belowOrigin: true
+    <script src="~/Scripts/init.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown-button").dropdown({
+                constrainWidth: false,
+                belowOrigin: true
+            });
         });
-    });
-</script>
+    </script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
