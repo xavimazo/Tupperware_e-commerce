@@ -26,5 +26,11 @@ namespace Tupperware_e_commerce.Controllers
 
             return View();
         }
+
+        public ActionResult SpecialFeature()
+        {
+            return View();
+        }
+
     }
 }
