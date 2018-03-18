@@ -150,6 +150,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AprietaBoton_Sello.jpg" />
     <Content Include="Content\background1.jpg" />
     <Content Include="Content\background2.jpg" />
     <Content Include="Content\background3.jpg" />
@@ -157,7 +158,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\BPA-free-symbol.png" />
     <Content Include="Content\Cristalwave_Valvula.png" />
-    <Content Include="Content\Fechador_sello.png" />
     <Content Include="Content\materialize.css" />
     <Content Include="Content\materialize.min.css" />
     <Content Include="Content\Modular_Sello.png" />
@@ -166,6 +166,7 @@
     <Content Include="Content\SpecialFeatures_Background1.png" />
     <Content Include="Content\SpecialFeatures_Background2.jpg" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\TM_Sello.jpg" />
     <Content Include="Content\tupperware-logo-black.png" />
     <Content Include="Content\Valvula_Refri.jpg" />
     <Content Include="favicon.ico" />
