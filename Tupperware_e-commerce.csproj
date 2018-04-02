@@ -146,7 +146,7 @@
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="Controllers\PublicationController.cs" />
+    <Compile Include="Controllers\StockController.cs" />
     <Compile Include="Controllers\SaleController.cs" />
     <Compile Include="Controllers\SpecialFeatureController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
@@ -244,10 +244,10 @@
     <Content Include="Views\Dashboard\Product\Create.cshtml" />
     <Content Include="Views\Dashboard\Product\Delete.cshtml" />
     <Content Include="Views\Dashboard\Product\Edit.cshtml" />
-    <Content Include="Views\Dashboard\Publication\Index.cshtml" />
-    <Content Include="Views\Dashboard\Publication\Delete.cshtml" />
-    <Content Include="Views\Dashboard\Publication\Edit.cshtml" />
-    <Content Include="Views\Dashboard\Publication\Create.cshtml" />
+    <Content Include="Views\Dashboard\Stock\Index.cshtml" />
+    <Content Include="Views\Dashboard\Stock\Delete.cshtml" />
+    <Content Include="Views\Dashboard\Stock\Edit.cshtml" />
+    <Content Include="Views\Dashboard\Stock\Create.cshtml" />
     <Content Include="Views\Dashboard\Sale\Index.cshtml" />
     <Content Include="Views\Dashboard\Sale\Create.cshtml" />
     <Content Include="Views\Dashboard\Sale\Edit.cshtml" />
