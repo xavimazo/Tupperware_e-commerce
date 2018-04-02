@@ -142,7 +142,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClientController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\PublicationController.cs" />
+    <Compile Include="Controllers\SaleController.cs" />
     <Compile Include="Controllers\SpecialFeatureController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Global.asax.cs">
@@ -229,6 +234,24 @@
     <Content Include="Views\Home\Recipes.cshtml" />
     <Content Include="Views\Home\Videos.cshtml" />
     <Content Include="Views\Store\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutDashboard.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Dashboard\Client\Index.cshtml" />
+    <Content Include="Views\Dashboard\Client\Create.cshtml" />
+    <Content Include="Views\Dashboard\Client\Delete.cshtml" />
+    <Content Include="Views\Dashboard\Client\Edit.cshtml" />
+    <Content Include="Views\Dashboard\Product\Index.cshtml" />
+    <Content Include="Views\Dashboard\Product\Create.cshtml" />
+    <Content Include="Views\Dashboard\Product\Delete.cshtml" />
+    <Content Include="Views\Dashboard\Product\Edit.cshtml" />
+    <Content Include="Views\Dashboard\Publication\Index.cshtml" />
+    <Content Include="Views\Dashboard\Publication\Delete.cshtml" />
+    <Content Include="Views\Dashboard\Publication\Edit.cshtml" />
+    <Content Include="Views\Dashboard\Publication\Create.cshtml" />
+    <Content Include="Views\Dashboard\Sale\Index.cshtml" />
+    <Content Include="Views\Dashboard\Sale\Create.cshtml" />
+    <Content Include="Views\Dashboard\Sale\Edit.cshtml" />
+    <Content Include="Views\Dashboard\Sale\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

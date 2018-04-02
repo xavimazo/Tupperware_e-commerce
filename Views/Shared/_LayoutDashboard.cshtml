@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/Content/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/Content/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/Content/nouislider.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper">
+                <img src="~/Content/tupperware-logo-black.png" id="Tupperware-logo-black" href="#">
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Publicaciones</a></li>
+                    <li><a href="#">Ventas</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
+    @RenderBody()
+    <footer class="page-footer teal">
+        <br />
+        <br />
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="~/Scripts/materialize.js"></script>
+    <script src="~/Scripts/init.js"></script>
+    <script src="~/Scripts/nouislider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown-button").dropdown({
+                constrainWidth: false,
+                belowOrigin: true
+            });
+        });
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
