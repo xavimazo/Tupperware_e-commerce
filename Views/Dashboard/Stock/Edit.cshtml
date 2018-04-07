@@ -1,5 +1,49 @@
-﻿@{
+﻿@model Data.Stock
+@{
     Layout = "~/Views/Shared/_LayoutDashboard.cshtml";
 }
-
-
+<div class="container">
+    <div class="row">
+        <form class="col s12" action="/Stock/Edit" method="post">
+            <br />
+            @Html.HiddenFor(x => x.Id)
+            <div class="row">
+                <div class="input-field col s3">
+                    @Html.EditorFor(x => x.ProductId)
+                    @Html.LabelFor(x => x.ProductId)
+                </div>
+                <div class="input-field col s3">
+                    @Html.EditorFor(x => x.Color)
+                    @Html.LabelFor(x => x.Color)
+                </div>
+                <div class="input-field col s3">
+                    @Html.EditorFor(x => x.Measurements)
+                    @Html.LabelFor(x => x.Measurements)
+                </div>
+                <div class="input-field col s3">
+                    @Html.EditorFor(x => x.Group)
+                    @Html.LabelFor(x => x.Group)
+                </div>
+                <div class="input-field col s3">
+                    @Html.EditorFor(x => x.Line)
+                    @Html.LabelFor(x => x.Line)
+                </div>
+                <div class="input-field col s3">
+                    @Html.EditorFor(x => x.Price)
+                    @Html.LabelFor(x => x.Price)
+                </div>
+                <div class="input-field col s3">
+                    @Html.EditorFor(x => x.State)
+                    @Html.LabelFor(x => x.State)
+                </div>
+                <div class="input-field col s3">
+                    @Html.EditorFor(x => x._Stock)
+                    @Html.LabelFor(x => x._Stock)
+                </div>
+                <div class="input-field col s3">
+                    <button type="submit" class="waves-effect waves-light btn col s6"><i class="material-icons left">mode_edit</i>Editar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
