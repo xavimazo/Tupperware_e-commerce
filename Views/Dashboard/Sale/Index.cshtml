@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IList<Data.Sale>
+@{
     Layout = "~/Views/Shared/_LayoutDashboard.cshtml";
 }
 <div class="container">
@@ -7,7 +8,7 @@
         <thead>
             <tr>
                 <th>Cliente</th>
-                <th>Producto</th>
+                <th>Producto y capacidad</th>
                 <th>Cantidad</th>
                 <th>Fecha</th>
                 <th>Editar</th>
@@ -15,14 +16,17 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Cecilia Mazzotti</td>
-                <td>Freezeer Time</td>
-                <td>5</td>
-                <td>20/04/2017</td>
-                <td><i class="small material-icons">mode_edit</i></td>
-                <td><i class="small material-icons">delete</i></td>
-            </tr>
+            @foreach (var sale in Model)
+            {
+                <tr>
+                    <td>@sale.Client</td>
+                    <td>@sale.ProductAndCapacity</td>
+                    <td>@sale.Units</td>
+                    <td>@sale.Date</td>
+                    <td><a href="/Sale/Edit/@sale.Id"><i class="small material-icons">mode_edit</i></td>
+                    <td><a href="/Sale/Delete/@sale.Id"><i class="small material-icons">delete</i></td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>

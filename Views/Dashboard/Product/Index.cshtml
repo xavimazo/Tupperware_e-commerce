@@ -1,28 +1,28 @@
-﻿@{
+﻿@model IList<Data.Product>
+@{
     Layout = "~/Views/Shared/_LayoutDashboard.cshtml";
 }
 <div class="container">
     <table class="highlight centered">
-        <br />
         <thead>
             <tr>
-                <th>Nombre del producto</th>
-                @*<th>Color</th>
-                <th>Capacidad</th>
-                <th>Medidas</th>
-                <th>Grupo</th>
-                <th>Linea</th>
-                <th>Stock</th>*@
+                <th>ID</th>
+                <th>Nombre del producto y capacidad</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Bowl Creativa</td>
-                <td><i class="small material-icons">mode_edit</i></td>
-                <td><i class="small material-icons">delete</i></td>
-            </tr>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td><a href="/Product/Edit/@product.Id"><i class="small material-icons">mode_edit</i></a></td>
+                    <td><a href="/Product/Delete/@product.Id"><i class="small material-icons">delete</i></a></td>
+                </tr>
+            }
+
         </tbody>
     </table>
 </div>

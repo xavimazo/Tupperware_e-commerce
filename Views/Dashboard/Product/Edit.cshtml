@@ -1,17 +1,19 @@
-﻿@{
+﻿@model Data.Product
+@{
     Layout = "~/Views/Shared/_LayoutDashboard.cshtml";
 }
 <div class="container">
     <div class="row">
-        <form class="col s12">
+        <form class="col s12" action="/Product/Edit" method="post">
             <br />
+            @Html.HiddenFor(x => x.Id)
             <div class="row">
                 <div class="input-field col s3">
-                    <input id="Producto" type="text" class="validate">
-                    <label for="last_name">Nombre del producto</label>
+                    @Html.EditorFor(x => x.Name)
+                    @Html.LabelFor(x => x.Name)
                 </div>
                 <div class="input-field col s3">
-                    <a class="waves-effect waves-light btn col s6"><i class="material-icons left">mode_edit</i>Editar</a>
+                    <button type="submit" class="waves-effect waves-light btn col s6"><i class="material-icons left">mode_edit</i>Editar</button>
                 </div>
             </div>
         </form>

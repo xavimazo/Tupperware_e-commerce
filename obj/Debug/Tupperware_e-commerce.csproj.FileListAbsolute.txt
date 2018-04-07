@@ -124,3 +124,10 @@ C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\obj\Debug\T
 C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\obj\Debug\Tupperware_e-commerce.csproj.CoreCompileInputs.cache
 C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\obj\Debug\Tupperware_e-commerce.dll
 C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\obj\Debug\Tupperware_e-commerce.pdb
+C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\bin\Data.dll
+C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\bin\Data.pdb
+C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\bin\Data.dll.config
+C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\bin\EntityFramework.xml
+C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\bin\EntityFramework.dll
+C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\bin\EntityFramework.SqlServer.dll
+C:\Users\xavi_\Documents\Tupperware_e-commerce\Tupperware_e-commerce\bin\EntityFramework.SqlServer.xml
