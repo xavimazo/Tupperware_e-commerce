@@ -22,6 +22,9 @@ namespace Tupperware_e_commerce.Controllers
         {
             using (var db = new TupperwareContext())
             {
+                if (db.Products.Any(p => p.Name == product.Name))
+                    throw new Exception("Ya se agrego un producto con ese nombre");
+
                 db.Products.Add(product);
                 db.SaveChanges();
             }

@@ -159,6 +159,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\StockViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -170,12 +171,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\BPA-free-symbol.png" />
     <Content Include="Content\Cristalwave_Valvula.png" />
-    <Content Include="Content\E1.jpg" />
     <Content Include="Content\materialize.css" />
     <Content Include="Content\materialize.min.css" />
     <Content Include="Content\Modular_Sello.png" />
     <Content Include="Content\nouislider.css" />
     <Content Include="Content\nouislider.min.css" />
+    <Content Include="Content\ProductsImages\EcoTwist500mlVioleta.jpg" />
     <Content Include="Content\Redondo_Sello.png" />
     <Content Include="Content\Sensacion_Sello.png" />
     <Content Include="Content\SpecialFeatures_Background1.png" />
@@ -261,7 +262,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

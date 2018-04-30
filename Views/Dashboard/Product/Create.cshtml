@@ -12,6 +12,18 @@
                     @Html.LabelFor(x => x.Name)
                 </div>
                 <div class="input-field col s3">
+                    @Html.EditorFor(x => x.Composition)
+                    @Html.LabelFor(x => x.Composition)
+                </div>
+                <div class="input-field col s12">
+                    @Html.TextAreaFor(x => x.ShortDescription)
+                    @Html.LabelFor(x => x.ShortDescription)
+                </div>
+                <div class="input-field col s12">
+                    @Html.TextAreaFor(x => x.LargeDescription)
+                    @Html.LabelFor(x => x.LargeDescription)
+                </div>
+                <div class="input-field col s3">
                     <button type="submit" class="waves-effect waves-light btn col s6"><i class="material-icons left">save</i>Guardar producto</button>
                 </div>
             </div>

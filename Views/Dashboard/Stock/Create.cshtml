@@ -1,4 +1,4 @@
-﻿@model Data.Stock
+﻿@model Tupperware_e_commerce.Models.StockViewModel
 @{
     Layout = "~/Views/Shared/_LayoutDashboard.cshtml";
 }
@@ -7,37 +7,45 @@
         <form class="col s12" action="/Stock/Create" method="post">
             <br />
             <div class="row">
-                <div class="input-field col s3">
-                    @Html.EditorFor(x => x.ProductId)
-                    @Html.LabelFor(x => x.ProductId)
+                <div class="col s3">
+                    @Html.LabelFor(x => x.Stock.ProductId)
+                    @Html.DropDownListFor(x => x.Stock.ProductId, Model.Products.Select(p => new SelectListItem { Value = p.Id.ToString(), Text = p.Name }), new { @class = "browser-default" })
                 </div>
                 <div class="input-field col s3">
-                    @Html.EditorFor(x => x.Color)
-                    @Html.LabelFor(x => x.Color)
+                    @Html.EditorFor(x => x.Stock.Capacidad)
+                    @Html.LabelFor(x => x.Stock.Capacidad)
                 </div>
                 <div class="input-field col s3">
-                    @Html.EditorFor(x => x.Measurements)
-                    @Html.LabelFor(x => x.Measurements)
+                    @Html.EditorFor(x => x.Stock.Color)
+                    @Html.LabelFor(x => x.Stock.Color)
                 </div>
                 <div class="input-field col s3">
-                    @Html.EditorFor(x => x.Group)
-                    @Html.LabelFor(x => x.Group)
+                    @Html.EditorFor(x => x.Stock.Measurements)
+                    @Html.LabelFor(x => x.Stock.Measurements)
                 </div>
                 <div class="input-field col s3">
-                    @Html.EditorFor(x => x.Line)
-                    @Html.LabelFor(x => x.Line)
+                    @Html.EditorFor(x => x.Stock.Categorie)
+                    @Html.LabelFor(x => x.Stock.Categorie)
                 </div>
                 <div class="input-field col s3">
-                    @Html.EditorFor(x => x.Price)
-                    @Html.LabelFor(x => x.Price)
+                    @Html.EditorFor(x => x.Stock.Line)
+                    @Html.LabelFor(x => x.Stock.Line)
                 </div>
                 <div class="input-field col s3">
-                    @Html.EditorFor(x => x.State)
-                    @Html.LabelFor(x => x.State)
+                    @Html.EditorFor(x => x.Stock.Price)
+                    @Html.LabelFor(x => x.Stock.Price)
                 </div>
                 <div class="input-field col s3">
-                    @Html.EditorFor(x => x._Stock)
-                    @Html.LabelFor(x => x._Stock)
+                    @Html.EditorFor(x => x.Stock.State)
+                    @Html.LabelFor(x => x.Stock.State)
+                </div>
+                <div class="input-field col s3">
+                    @Html.EditorFor(x => x.Stock.CantidadStock)
+                    @Html.LabelFor(x => x.Stock.CantidadStock)
+                </div>
+                <div class="input-field col s3">
+                    @Html.EditorFor(x => x.Stock.Image)
+                    @Html.LabelFor(x => x.Stock.Image)
                 </div>
                 <div class="input-field col s3">
                     <button type="submit" class="waves-effect waves-light btn col s6"><i class="material-icons left">save</i>Guardar producto</button>

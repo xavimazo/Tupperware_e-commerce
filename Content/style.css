@@ -15,6 +15,13 @@
     font-style: normal
 }
 
+
+.card .card-title-store {
+    font-size: 15px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+}
+
 .card .card-title2 {
     display: block;
     line-height: 32px;

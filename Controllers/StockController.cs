@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Tupperware_e_commerce.Models;
+using System.Data.Entity;
 
 namespace Tupperware_e_commerce.Controllers
 {
@@ -14,7 +16,17 @@ namespace Tupperware_e_commerce.Controllers
         public ActionResult Create()
         {
             var model = new Stock();
-            return View("../Dashboard/Stock/Create", model);
+            var viewModel = new StockViewModel
+            {
+                Stock = model
+            };
+
+            using (var db = new TupperwareContext())
+            {
+                viewModel.Products = db.Products.ToList();
+            }
+
+            return View("../Dashboard/Stock/Create", viewModel);
         }
 
         [HttpPost]
@@ -55,8 +67,16 @@ namespace Tupperware_e_commerce.Controllers
         {
             using (var db = new TupperwareContext())
             {
-                var stock = db.Stock.Find(id);
-                return View("../Dashboard/Stock/Edit");
+                var stock = db.Stock.Include(s => s.Product).FirstOrDefault(s => s.Id == id);
+                var products = db.Products.ToList();
+
+                var viewModel = new StockViewModel
+                {
+                    Stock = stock,
+                    Products = products
+                };
+
+                return View("../Dashboard/Stock/Edit", viewModel);
             }
         }
 
@@ -77,7 +97,7 @@ namespace Tupperware_e_commerce.Controllers
             var stock = new List<Stock>();
             using (var db = new TupperwareContext())
             {
-               stock = db.Stock.ToList();
+               stock = db.Stock.Include(s => s.Product).ToList();
             }
             return View("../Dashboard/Stock/Index", stock);
         }
